@@ -1,4 +1,4 @@
-package modulo02.locadora;
+package modulo02.POO.locadora;
 
 public class Filme {
 

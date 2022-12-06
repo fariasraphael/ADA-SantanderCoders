@@ -1,7 +1,7 @@
-package modulo02;
+package modulo02.POO;
 
-import modulo02.locadora.Filme;
-import modulo02.locadora.Locadora;
+import modulo02.POO.locadora.Filme;
+import modulo02.POO.locadora.Locadora;
 
 import java.util.ArrayList;
 import java.util.List;

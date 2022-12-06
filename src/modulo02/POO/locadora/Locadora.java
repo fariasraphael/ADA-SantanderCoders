@@ -1,4 +1,4 @@
-package modulo02.locadora;
+package modulo02.POO.locadora;
 
 import java.util.ArrayList;
 import java.util.List;
