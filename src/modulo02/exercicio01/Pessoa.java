@@ -15,7 +15,7 @@ public class Pessoa {
         return nome;
     }
 
-    public void setNome (String nome) {
+    public void setNome () {
         this.nome = nome;
     }
 
