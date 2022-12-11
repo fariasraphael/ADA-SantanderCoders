@@ -10,7 +10,14 @@ public class Pessoa {
         this.idade = idade;
         this.altura = altura;
     }
-
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                ", altura=" + altura +
+                '}';
+    }
     public String getNome () {
         return nome;
     }
