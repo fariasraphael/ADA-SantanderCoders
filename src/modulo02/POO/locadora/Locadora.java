@@ -58,5 +58,12 @@ public class Locadora {
             System.out.println(filme.toString());
         }
     }
+    public List<String> listarNomeFilme(){
+        List<String> nomeFilmes = new ArrayList<>();
+        for(Filme filme: this.filmes) {
+            nomeFilmes.add(filme.getNome());
+        }
+        return nomeFilmes;
+    }
 
 }

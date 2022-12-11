@@ -8,6 +8,11 @@ public class Filme {
     private String indicacaoClassificativa;
     private Double valorLocacao;
 
+    public Filme (String nome, Double valorLocacao){
+        this.nome = nome;
+        this.valorLocacao = valorLocacao;
+    }
+
     public Filme (String nome, String genero, Double ValorLocacao) {
         this.nome = nome;
         this.genero = genero;

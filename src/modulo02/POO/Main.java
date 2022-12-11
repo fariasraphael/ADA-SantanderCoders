@@ -9,20 +9,33 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        Filme marvel = new Filme("Pantera Negra", "Marvel", 7.00);
-        Filme dc = new Filme("Mulher Maravilha", "Heróis", "dc", "10", 7.0);
-        List<Filme> listaFilme = new ArrayList<>();
-        listaFilme.add(marvel);
-        listaFilme.add(dc);
+        Filme panteraNegra = new Filme("Pantera Negra", "Marvel", 7.00);
+        Filme mulherMaravilha = new Filme("Mulher Maravilha", "Heróis", "dc", "10", 7.0);
+        Filme harryPotter = new Filme ("Harry Potter e a Pedra Filosofal", 5.00);
+        Filme cidadePerdida = new Filme("Cidade Perdida", 9.00);
+        Filme morbius = new Filme("Morbius", 9.00);
 
-        Locadora locadora = new Locadora("AdaFlix", "123456789", listaFilme);
-        locadora.cadastrarFilme(marvel);
-        locadora.cadastrarFilme(dc);
+        //exemplo de lista de filmes criadapara ser passada no construtor
+        List<Filme> listaFilmes1 = new ArrayList<>();
+        listaFilmes1.add(panteraNegra);
+        listaFilmes1.add(mulherMaravilha);
+        listaFilmes1.add(harryPotter);
+        listaFilmes1.add(cidadePerdida);
+        listaFilmes1.add(morbius);
+
+//        criando uma locadora
+        Locadora locadora = new Locadora("AdaFlix", "123456789", listaFilmes1);
+
         locadora.listarFilmes();
 
-//        Locadora locadora = new Locadora("AdaFlix", "123456789", listaFilme);
-//        locadora.cadastrarFilme(marvel);
-//        locadora.cadastrarFilme(dc);
-//        locadora.listarFilmes();
+
+        //exemplo de outra lista de filmes criadapara ser passada no construtor usando set
+        List<Filme> listaFilmes2 = new ArrayList<>();
+        listaFilmes2.add(cidadePerdida);
+        listaFilmes2.add(harryPotter);
+        locadora.setFilmes(listaFilmes2);
+
+        locadora.listarFilmes();
+
     }
 }
