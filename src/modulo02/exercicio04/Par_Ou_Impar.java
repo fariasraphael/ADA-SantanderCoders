@@ -9,4 +9,8 @@ Para determinar se o número é impar ou par, você deve criar uma classe que re
  */
 
 public class Par_Ou_Impar {
+
+    public static String eParOuImpar(Integer number) {
+        return (number % 2 != 0) ? "Impar" : "Par";
+    }
 }

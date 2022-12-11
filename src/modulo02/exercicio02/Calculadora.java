@@ -9,6 +9,8 @@ características um valor1 e um valor2 e possui os comportamentos de somar,subtr
 Cada comportamento deve retornar o valor da operação correspondente.
 */
 
+import org.w3c.dom.ls.LSOutput;
+
 public class Calculadora {
 
     private Double valor1;
@@ -19,22 +21,22 @@ public class Calculadora {
         this.valor2 = valor2;
     }
 
-    public Double somar() {
-        return valor1 + valor2;
+    public void somar() {
+        System.out.println(valor1 + valor2);
     }
 
-    public Double subtrair() {
-        return valor1 - valor2;
+    public void subtrair() {
+        System.out.println(valor1 - valor2);
     }
 
-    public Double multiplicar() {
-        return valor1 * valor2;
+    public void multiplicar() {
+        System.out.println(valor1 * valor2);
     }
 
-    public Double dividir() throws ArithmeticException {
+    public void dividir() throws ArithmeticException {
         if (valor2 == 0) {
             throw new ArithmeticException("Não é permitido dividir por zero.");
         }
-        return valor1 / valor2;
+        System.out.println(valor1 / valor2);
     }
 }
