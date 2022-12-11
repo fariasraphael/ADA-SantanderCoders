@@ -1,13 +1,52 @@
 package modulo02.POO.heranca.empresa;
+/*
+Questão #1
+Valor 100
+Enunciado
+Construa um código Java para definir um objeto do tipo pessoa que possui as seguintes características (nome,idade,altura).
+*/
+public class Pessoa {
 
-public abstract class Pessoa {
-    protected String nome;
-    protected String cpf;
+    private String nome;
+    private Integer idade;
+    private Double altura;
 
-    public Pessoa (String nome,
-                   String cpf){
+    public Pessoa(String nome, Integer idade, Double altura) {
         this.nome = nome;
-        this.cpf = cpf;
+        this.idade = idade;
+        this.altura = altura;
     }
-    public abstract void tirarFerias();
+
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                ", altura=" + altura +
+                '}';
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public Integer getIdade() {
+        return idade;
+    }
+
+    public void setIdade(Integer idade) {
+        this.idade = idade;
+    }
+
+    public Double getAltura() {
+        return altura;
+    }
+
+    public void setAltura(Double altura) {
+        this.altura = altura;
+    }
 }
