@@ -1,6 +1,6 @@
 package modulo02.POO.heranca.empresa;
 
-public class Pessoa {
+public abstract class Pessoa {
     protected String nome;
     protected String cpf;
 
@@ -9,5 +9,5 @@ public class Pessoa {
         this.nome = nome;
         this.cpf = cpf;
     }
-
+    public abstract void tirarFerias();
 }

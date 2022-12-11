@@ -10,4 +10,14 @@ public class Gerente extends Funcionario{
         super(nome, cpf, matriculaFuncionario);
         this.departamento = departamento;
     }
+
+    public void contratarFuncionario(){
+        System.out.println("Funcionário contratado");
+    }
+
+    @Override
+    public void trabalhar() {
+        System.out.print(nome + " ");
+        super.trabalhar();
+    }
 }

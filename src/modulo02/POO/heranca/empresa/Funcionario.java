@@ -10,4 +10,12 @@ public class Funcionario extends Pessoa{
         super(nome, cpf);
         this.matriculaFuncionario = matriculaFuncionario;
     }
+
+    public void trabalhar(){
+        System.out.println("Funcionario trabalhando!");
+    }
+
+    public void tirarFerias(){
+        System.out.println("Funcionario saiu de férias!");
+    }
 }
