@@ -58,6 +58,7 @@ public class Locadora {
             System.out.println(filme.toString());
         }
     }
+    //Méodo que só lista o nome dos filmes
     public List<String> listarNomeFilme(){
         List<String> nomeFilmes = new ArrayList<>();
         for(Filme filme: this.filmes) {

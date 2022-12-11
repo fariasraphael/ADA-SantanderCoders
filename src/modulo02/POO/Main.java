@@ -26,16 +26,22 @@ public class Main {
 //        criando uma locadora
         Locadora locadora = new Locadora("AdaFlix", "123456789", listaFilmes1);
 
-        locadora.listarFilmes();
+//        locadora.listarFilmes();
 
 
-        //exemplo de outra lista de filmes criadapara ser passada no construtor usando set
+        //exemplo de outra lista de filmes criada para ser passada no construtor usando set
         List<Filme> listaFilmes2 = new ArrayList<>();
         listaFilmes2.add(cidadePerdida);
         listaFilmes2.add(harryPotter);
+
         locadora.setFilmes(listaFilmes2);
 
-        locadora.listarFilmes();
+//        locadora.listarFilmes();
 
+        // exemplo de outra lista utilizandoo metododo de cadastrar
+        locadora.cadastrarFilme(panteraNegra);
+        locadora.cadastrarFilme(morbius);
+
+        locadora.listarFilmes();
     }
 }

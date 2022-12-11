@@ -74,7 +74,7 @@ public class Filme {
                 ", descricao='" + descricao + '\'' +
                 ", genero='" + genero + '\'' +
                 ", indicacaoClassificativa='" + indicacaoClassificativa + '\'' +
-                ", valorLocacao=" + valorLocacao +
+                ", valorLocacao=" + String.format("%.2f",valorLocacao) +
                 '}';
     }
 }
