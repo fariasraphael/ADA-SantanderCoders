@@ -8,9 +8,10 @@ Construa um programa que receba um número como entrada e informe ao usuário se
 Para determinar se o número é impar ou par, você deve criar uma classe que represente este cálculo.
  */
 
-public class Par_Ou_Impar {
+public abstract class Par_Ou_Impar {
 
     public static String eParOuImpar(Integer number) {
         return (number % 2 != 0) ? "Impar" : "Par";
     }
+
 }

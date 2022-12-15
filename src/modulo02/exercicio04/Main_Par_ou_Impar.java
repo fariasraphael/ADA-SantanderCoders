@@ -9,8 +9,8 @@ public class Main_Par_ou_Impar {
         Integer number = scan.nextInt();
         scan.nextLine();
 
-        String parOuImpar = Par_Ou_Impar.eParOuImpar(number);
-        System.out.println(number + " é " + parOuImpar);
+        //String parOuImpar = Par_Ou_Impar.eParOuImpar(number);
+        System.out.println(number + " é " + Par_Ou_Impar.eParOuImpar(number));
 
     }
 }
