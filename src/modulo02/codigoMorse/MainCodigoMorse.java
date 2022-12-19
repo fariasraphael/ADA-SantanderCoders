@@ -1,5 +1,6 @@
 package modulo02.codigoMorse;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 import static java.lang.Character.isUpperCase;
@@ -12,15 +13,10 @@ public class MainCodigoMorse {
         Scanner scan = new Scanner(System.in);
         System.out.print("Digite um texto: ");
         String texto = scan.nextLine();
-        //scan.next();
-        Codigo_Morse.alphaToMorse(texto);
-
-
-
-
-
-//        System.out.println(Character.isUpperCase(alpha.charAt(3)));
-//        System.out.println(alpha.charAt(4)-65);
-//        System.out.println();
+        if (Character.isAlphabetic(texto.charAt(0))||Character.isDigit((texto.charAt(0)))) {
+            System.out.println(Codigo_Morse.alphaToMorse(texto));
+        } else {
+            System.out.println(Codigo_Morse.morseToalpha(texto));
+        }
     }
 }
