@@ -1,6 +1,6 @@
 package modulo03.Exercicios;
 
-abstract public class Pessoa implements Comparable{
+abstract public class Pessoa implements Comparable<Pessoa>{
     String nome;
 
     Pessoa (String nome) {
@@ -16,7 +16,7 @@ abstract public class Pessoa implements Comparable{
     }
 
     @Override
-    public String toString() {
-        return nome;
+    public int compareTo(Pessoa o) {
+        return this.nome.compareTo(o.getNome());
     }
 }
