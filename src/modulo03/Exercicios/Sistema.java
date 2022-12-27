@@ -1,6 +1,5 @@
 package modulo03.Exercicios;
 
-import java.util.Collection;
 import java.util.Collections;
 
 public class Sistema {
