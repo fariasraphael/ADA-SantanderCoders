@@ -3,22 +3,18 @@ package modulo03.Exercicios;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Turma <T extends Aluno> {
-
-    private List<T> ts = new ArrayList<>();
+public class Turma {
     private Professor professor;
+    private final List<Aluno> alunos = new ArrayList<>();
 
-    public void colocaAluno(T t) {
-        ts.add(t);
+    public void adicionarAluno (Aluno aluno){
+        alunos.add(aluno);
     }
-
-    public void colocaProfessor (Professor professor) {
+    public void adicionarProfessor (Professor professor){
         this.professor = professor;
     }
-
     @Override
     public String toString() {
-        return  " Nome do professor: " + professor + " | " +
-                "Lista de alunos:" + ts + '}';
+        return "Professor: " + professor.nome + " | Alunos: " + alunos;
     }
 }
