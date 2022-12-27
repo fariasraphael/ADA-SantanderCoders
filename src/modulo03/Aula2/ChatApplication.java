@@ -8,4 +8,14 @@ public class ChatApplication {
             System.out.println("Erro ao adicionar participante.");
         }
     }
+
+    public void colocaAlunoSala(Sala sala, Aluno aluno) {
+        //o método só aceita aluno devido este estender Participante
+        if(sala.adicionaParticipante(aluno)) {
+            System.out.println("Aluno adicionado.");
+        } else {
+            System.out.println("Erro ao adicionar Aluno.");
+        }
+    }
+
 }
