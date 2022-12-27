@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Turma <T extends Aluno> {
     private Professor professor;
-    private final List<T> ts = new ArrayList<>();
+    public List<T> ts = new ArrayList<>();
 
     public void adicionarAluno (T t){
         ts.add(t);
