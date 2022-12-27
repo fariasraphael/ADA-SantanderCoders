@@ -4,20 +4,27 @@ public class Sistema {
     public static void main(String[] args) {
         Professor professor = new Professor("Kadu");
 
-        Aluno aluno1 = new Aluno("Leonardo");
-        Aluno aluno2 = new Aluno("Vivian");
-        Aluno aluno3 = new Aluno("Raphael");
+        AlunoJava alunoJava1 = new AlunoJava("Leonardo Java");
+        AlunoJava alunoJava2 = new AlunoJava("Vivian Java");
+        AlunoJava alunoJava3 = new AlunoJava("Raphael Java");
 
-        Turma turma = new Turma();
+        AlunoJS alunoJS1 = new AlunoJS("Leonardo JS");
+        AlunoJS alunoJS2 = new AlunoJS("Vivian JS");
+        AlunoJS alunoJS3 = new AlunoJS("Raphael JS");
 
-        criarTurma(turma, professor, aluno1, aluno2, aluno3);
+        Turma <AlunoJava> turmaJava = new Turma<>();
+        Turma <AlunoJS> turmaJS = new Turma<>();
 
-        System.out.println(turma);
+        criarTurma(turmaJava, professor, alunoJava1, alunoJava2, alunoJava3);
+        criarTurma(turmaJS, professor, alunoJS1, alunoJS2, alunoJS3);
+
+        System.out.println(turmaJava);
+        System.out.println(turmaJS);
     }
-    public static void criarTurma (Turma turma, Professor professor, Aluno aluno1, Aluno aluno2, Aluno aluno3){
+    public static <T extends Aluno> void criarTurma(Turma<T> turma, Professor professor, T t1, T t2, T t3){
         turma.adicionarProfessor(professor);
-        turma.adicionarAluno(aluno1);
-        turma.adicionarAluno(aluno2);
-        turma.adicionarAluno(aluno3);
+        turma.adicionarAluno(t1);
+        turma.adicionarAluno(t2);
+        turma.adicionarAluno(t3);
     }
 }
