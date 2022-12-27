@@ -18,4 +18,12 @@ public class ChatApplication {
         }
     }
 
+    public void colocaProfessorSala(Sala sala, Professor professor) {
+        //o método só aceita professor devido este estender Participante
+        if(sala.adicionaParticipante(professor)) {
+            System.out.println("Professor adicionado.");
+        } else {
+            System.out.println("Erro ao adicionar Professor.");
+        }
+    }
 }
