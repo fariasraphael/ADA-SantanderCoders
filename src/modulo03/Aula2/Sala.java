@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Sala <T extends Participante> {
-    private List<Participante> participantes = new ArrayList<>();
-            /*
-            List<Participante> faz o java só aceitar Participante nessa lista, pois foi passado
-             dentro do parametro '<Generico>'. Se esta estiver vazia, a lista aceitaria qualquer objeto.
-             */
-    public boolean adicionaParticipante(Participante participante) {
-        return participantes.add(participante);
+    /*
+    faço com que a lista e o metodo da Classe Sala aceite somente Tipos (T = TYPE) que estendam Participante
+     */
+    private List<T> ts = new ArrayList<>();
+
+    public boolean adicionaParticipante(T t) {
+        return ts.add(t);
 
     }
 }
