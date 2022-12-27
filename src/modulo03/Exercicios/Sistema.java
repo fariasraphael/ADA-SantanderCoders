@@ -1,7 +1,6 @@
 package modulo03.Exercicios;
 
 public class Sistema {
-
     public static void main(String[] args) {
         Professor professor = new Professor("Kadu");
 
@@ -15,7 +14,6 @@ public class Sistema {
 
         System.out.println(turma);
     }
-
     public static void criarTurma (Turma turma, Professor professor, Aluno aluno1, Aluno aluno2, Aluno aluno3){
         turma.adicionarProfessor(professor);
         turma.adicionarAluno(aluno1);
