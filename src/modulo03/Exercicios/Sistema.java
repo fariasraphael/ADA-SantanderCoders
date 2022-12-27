@@ -3,42 +3,23 @@ package modulo03.Exercicios;
 public class Sistema {
 
     public static void main(String[] args) {
+        Professor professor = new Professor("Kadu");
 
-        Turma<AlunoJava> turmaJava = new Turma<>();
-        Turma<AlunoJavaScript> turmaJavaSript = new Turma<>();
+        Aluno aluno1 = new Aluno("Leonardo");
+        Aluno aluno2 = new Aluno("Vivian");
+        Aluno aluno3 = new Aluno("Raphael");
 
-        Professor professor = new Professor("kadu");
+        Turma turma = new Turma();
 
-        AlunoJava alunoJava1 = new AlunoJava("raphael Java");
-        AlunoJava alunoJava2 = new AlunoJava("vivian Java");
-        AlunoJava alunoJava3 = new AlunoJava("leonardo Java");
+        criarTurma(turma, professor, aluno1, aluno2, aluno3);
 
-
-
-        AlunoJavaScript alunoJavaScript1 = new AlunoJavaScript("raphael JS");
-        AlunoJavaScript alunoJavaScript2 = new AlunoJavaScript("vivian JS");
-        AlunoJavaScript alunoJavaScript3 = new AlunoJavaScript("leonardo JS");
-
-
-        colocaProfessorTurma(turmaJavaSript, professor);
-        colocaAlunoTurma(turmaJavaSript, alunoJavaScript1);
-        colocaAlunoTurma(turmaJavaSript, alunoJavaScript2);
-        colocaAlunoTurma(turmaJavaSript, alunoJavaScript3);
-
-        colocaProfessorTurma(turmaJava, professor);
-        colocaAlunoTurma(turmaJava, alunoJava1);
-        colocaAlunoTurma(turmaJava, alunoJava2);
-        colocaAlunoTurma(turmaJava, alunoJava3);
-
-        System.out.println(turmaJava);
-        System.out.println(turmaJavaSript);
-
-    }
-    public static <T extends Aluno> void colocaAlunoTurma(Turma<T> turma, T ts) {
-        turma.colocaAluno(ts);
+        System.out.println(turma);
     }
 
-    public static void colocaProfessorTurma(Turma turma, Professor professor){
-        turma.colocaProfessor(professor);
+    public static void criarTurma (Turma turma, Professor professor, Aluno aluno1, Aluno aluno2, Aluno aluno3){
+        turma.adicionarProfessor(professor);
+        turma.adicionarAluno(aluno1);
+        turma.adicionarAluno(aluno2);
+        turma.adicionarAluno(aluno3);
     }
 }
