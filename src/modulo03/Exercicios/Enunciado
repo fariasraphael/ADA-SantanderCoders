@@ -9,10 +9,11 @@ Sistema de Eduação a Distancia - Parte 1 - 01:41:14
     - implementar o método main
         - Criar uma turma e colocar um professor e 3 alunos
 
-
-
-
-
+Sistema de Eduação a Distancia - Parte 1.1 - 02:07:42
+- Criar as classes AlunoJava e AlunosJS que estendem Aluno
+- Fazer com que a Classe sala seja genérica
+- Fazer com que o método de incluir alunos em uma sala seja genérico
+- Criar duas turmas, uma para Java e outra para JavaScript e populá-las com um professor e 3 alunos
 
 Sistema de Educação a Distância - Parte 2
 
