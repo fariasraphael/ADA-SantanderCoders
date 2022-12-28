@@ -15,7 +15,9 @@ public class Sala <T extends Participante> {
 
     public boolean adicionaParticipante(T t) {
         return ts.add(t);
-
+    }
+    public void adicionarListaParticipantes (List<T> listT) {
+        ts.addAll(listT);
     }
 }
 
