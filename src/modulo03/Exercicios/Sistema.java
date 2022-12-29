@@ -23,11 +23,11 @@ public class Sistema {
         System.out.println(turmaJava);
         System.out.println(turmaJS);
     }
-    public static <T extends Aluno> void montarTurma(Turma<T> turma, Professor professor, T t1, T t2, T t3){
+   /* public static <T extends Aluno> void montarTurma(Turma<T> turma, Professor professor, T t1, T t2, T t3){
         turma.adicionarProfessor(professor);
         turma.adicionarAluno(t1);
         turma.adicionarAluno(t2);
         turma.adicionarAluno(t3);
         Collections.sort(turma.ts);
-    }
+    }*/
 }
