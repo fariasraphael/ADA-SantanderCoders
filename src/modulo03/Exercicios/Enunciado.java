@@ -1,6 +1,5 @@
 package modulo03.Exercicios;
-
-public class Enunciado {
+public class Enunciado {}
     /*
     Sistema de Eduação a Distancia - Parte 1 - 01:41:14
 - Criar a classe Pessoa
@@ -40,4 +39,4 @@ Sistema de Educação a Distância - Parte 2
 - Criar a classe Pedagogico, que terá o método analisaEvolucaoAcademica que utiliza o método com a lista ordenada
   por matrícula.
      */
-}
+
