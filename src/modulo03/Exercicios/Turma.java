@@ -15,6 +15,6 @@ public class Turma <T extends Aluno> {
     }
     @Override
     public String toString() {
-        return "Professor: " + professor.nome + " | Alunos: " + ts;
+        return "Turma de " + ts.get(0).getClass().getSimpleName() + " {Professor: " + professor.nome + " | Alunos: " + ts + "}";
     }
 }
