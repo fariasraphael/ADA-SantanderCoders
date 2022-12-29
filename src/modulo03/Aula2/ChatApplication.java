@@ -1,12 +1,14 @@
 package modulo03.Aula2;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ChatApplication {
 
     public static void main(String[] args){
 
         Sala<Aluno> salaAlunos = new Sala<>();
         Sala<Professor> salaProfessores = new Sala<>();
-
     }
     public <T extends Participante> void colocaTSala(Sala<T> sala, T t) {
         if(sala.adicionaParticipante(t)) {
@@ -15,6 +17,15 @@ public class ChatApplication {
             System.out.println("Erro ao adicionar participante.");
         }
     }
+    public static <T extends Participante> void colocaListaSala(Sala<T> sala) {
+        List<T> novosParticipantes = new ArrayList<>();
+
+        sala.adicionarListaParticipantes(novosParticipantes);
+        }
+
+        public static void  adicionaNaList(List<? extends Participante> turma){
+        turma.add(null);
+        }
 
 
    /*
